@@ -1,27 +1,36 @@
-#container {
-  text-align: center;
+.activity-card {
+  margin: 16px; /* Espaçamento entre os cards */
+  border-radius: 12px; /* Bordas arredondadas */
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Sombra leve */
+  transition: transform 0.2s ease-in-out; /* Animação ao passar o mouse */
 
+  &:hover {
+    transform: scale(1.02); /* Efeito de zoom */
+  }
+}
+
+.button-group {
+  display: flex;
+  justify-content: space-between; /* Botões alinhados nos extremos */
+  margin-top: 8px;
+}
+
+.card-footer {
+  height: 4px; /* Linha inferior */
+  width: 100%;
+  // background: linear-gradient(90deg, #3b82f6, #ef4444);
+  background: linear-gradient(90deg, #0FA3B1, #BA3F1D); /* Gradiente decorativo  */ 
+  border-radius: 0 0 12px 12px; /* Arredondar apenas as bordas inferiores */
+}
+
+
+
+.mark-div {
+  display: flex;
+  justify-content: flex-end;
   position: absolute;
-  left: 0;
+  top: 0;
   right: 0;
-  top: 50%;
-  transform: translateY(-50%);
+  align-items: center;
 }
 
-#container strong {
-  font-size: 20px;
-  line-height: 26px;
-}
-
-#container p {
-  font-size: 16px;
-  line-height: 22px;
-
-  color: #8c8c8c;
-
-  margin: 0;
-}
-
-#container a {
-  text-decoration: none;
-}

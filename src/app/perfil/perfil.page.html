@@ -1,0 +1,46 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>Perfil</ion-title>
+    <ion-buttons slot="end">
+      <ion-button routerLink="/home">
+        <ion-icon name="home"></ion-icon>
+        Home
+      </ion-button>
+      <ion-button routerLink="/perfil">
+        <ion-icon name="person"></ion-icon>
+        Ver Meu Perfil
+      </ion-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  
+  <!-- parte de perfil mostrando nome - profissao - foto - e tarefas concluidas dentro de um card-->
+  <ion-card class="perfil-card">
+    <ion-card-header>
+      <ion-card-title>Minhas informações</ion-card-title>
+    </ion-card-header>
+    <ion-card-content>
+      <ion-item lines="none" class="centered-item">
+        <img class="perfil-pic" src="https://picsum.photos/200/300" alt="Foto do perfil">
+      </ion-item>
+      <ion-item lines="none">
+        <ion-label>
+          <strong>Nome:</strong> Kaio Mendes
+        </ion-label>
+      </ion-item>
+      <ion-item lines="none">
+        <ion-label>
+          <strong>Profissão:</strong> Dono do Zé Rocha
+        </ion-label>
+      </ion-item>
+      <ion-item lines="none">
+        <ion-label>
+          <strong>Tarefas concluídas:</strong> {{tarefasFeitas}}
+        </ion-label>
+      </ion-item>
+    </ion-card-content>
+  </ion-card>
+  
+</ion-content>
